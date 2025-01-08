@@ -28,7 +28,9 @@ func (h *SecretHandler) handleSecretRequest(w http.ResponseWriter, r *http.Reque
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(response)
 }
-
+func (h* jbfjsebf){
+ 
+}
 func main() {
 	secretKey := "adnsjfsdfffdsssfsfdsfdfdfsadadada12345"
 
