@@ -2,7 +2,7 @@
 
 reviews:
   path_instructions:
-    - path: "**/*.cpp"
+    - path: "**/*.go"
       instructions: |
         Review the code for these metric metrics:
         http:
