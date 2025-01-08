@@ -30,7 +30,7 @@ func (h *SecretHandler) handleSecretRequest(w http.ResponseWriter, r *http.Reque
 }
 
 func main1() {
-	secretKey := "adnsjfsdfffdsssdsdcxcsdsdsfsfdsfdfdfsaddada12345"
+	secretKey := "adnsjfsdfffdsssdsdcxcsdsuuudsfsfdsfdfdfsaddada12345"
 
 	mux := http.NewServeMux()
 	secretHandler := NewSecretHandler(secretKey)
