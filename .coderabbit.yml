@@ -4,7 +4,7 @@ reviews:
   path_instructions:
     - path: "**/*.go"
       instructions: |
-        Review the code for these metric metrics:
+        Review the code for these metrics and generate a detailed report:
         http:
           request_count:
             description: "Total number of incoming requests per endpoint"
