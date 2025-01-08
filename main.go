@@ -32,7 +32,7 @@ func (h* jbfjsebf){
  
 }
 func main() {
-	secretKey := "adnsjfsdfffdsssfsfdsfdfdfsadadada12345"
+	secretKey := "adnsjfsdfffdsssfsfdsfdfdfsaddada12345"
 
 	mux := http.NewServeMux()
 	secretHandler := NewSecretHandler(secretKey)
