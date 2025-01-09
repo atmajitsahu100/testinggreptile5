@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      InstanceType: "t2.micro"
+      KeyName: "MyKeyPair" # Potential Issue: Hardcoded sensitive value
+      ImageId: "ami-0abcdef1234567890" # Potential Issue: Outdated AMI
+      SecurityGroups: 
+        - Ref: "InsecureSecurityGroup"
+
+  InsecureSecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: "Allow all inbound traffic"
+      SecurityGroupIngress:
+        - IpProtocol: "-1" # Potential Issue: Open to all protocols
+          CidrIp: "0.0.0.0/0" # Potential Issue: Open to the world
