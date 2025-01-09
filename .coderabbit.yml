@@ -1,9 +1,12 @@
-
-
 reviews:
   path_instructions:
     - path: "**/*.go"
       instructions: |
+       
+         
+         "Verify that secret keys match the required format as below."
+         regex: "^[A-Za-z0-9+/]{32,64}$" 
+
         Review the code for these metrics and generate a detailed report:
         http:
           request_count:
